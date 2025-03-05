@@ -33,7 +33,7 @@ class ApiServices {
         return data;
       } else {
         throw Exception(
-            'Failed to load products from the internet, there is a problem with status code ${response.statusCode}');
+            'Failed to load products from the internet, there is a problem with status code ${response.statusCode}, with body ${response.body}');
       }
     }
   }
